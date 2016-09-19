@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jimmy(Xiaojun He)
  * Created on September 18, 2016, 3:42 PM
- * Purpose: Assignment 1 for Review
+ * Purpose: Review 1
  */
 
 //System Libraries
