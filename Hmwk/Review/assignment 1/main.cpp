@@ -24,9 +24,9 @@ void pg7();//Chapter 6 problem 7
 void pg8();//Chapter 7 problem 6
 void pg9();//Chapter 8 problem 7
 void pg10();//Chapter 5 problem 11
-float celsius(int);//convert f to c
-void Sort(string [],int); //Mark sort for string array
-int Search(string,const string [],int);//Binary search
+float celsius(int);//convert f to c for program 6
+void Sort(string [],int); //Mark sort for string array for program 9 
+int Search(string,const string [],int);//Binary search for program 9 
 
 int main(int argc, char** argv) {
     //Declare variable
@@ -180,10 +180,30 @@ void pg5(){
     float length1, length2, width1 ,width2 ,areas1, areas2;
     
     //input variables
-    cout<<"Enter the length and width of No.1 rectangle!"<<endl;
-    cin>>length1>>width1;
-    cout<<"Enter the length and width of No.2 rectangle!"<<endl;
-    cin>>length2>>width2;
+    do{
+    cout<<"Enter the length of No.1 rectangle!"<<endl;
+    cin>>length1;
+    if(length1<=0)
+        cout<<"Invalid input"<<endl;
+    }while(length1<=0);
+    do{
+    cout<<"Enter the width of No.1 rectangle!"<<endl;
+    cin>>width1;
+    if(width1<=0)
+        cout<<"Invalid input"<<endl;
+    }while(width1<=0);
+    do{
+    cout<<"Enter the length of No.2 rectangle!"<<endl;
+    cin>>length2;
+    if(length2<=0)
+        cout<<"Invalid input"<<endl;
+    }while(length2<=0);
+    do{
+    cout<<"Enter the width of No.2 rectangle!"<<endl;
+    cin>>width2;
+    if(width2<=0)
+        cout<<"Invalid input"<<endl;
+    }while(width2<=0);
     
     //calculate
     areas1=length1*width1;
@@ -349,9 +369,9 @@ void pg9(){
     
     //Print the result 
     if(result==-1)
-        cout<<"The name you searched is in the array"<<endl;
+        cout<<"The name you searched is not in the array!"<<endl;
     else
-    cout<<"The name you searched is not in the array"<<endl;
+    cout<<"The name you searched is in the array!"<<endl;
      
 }
 
@@ -361,8 +381,12 @@ void pg10(){
     int sum=0;
     
     //input the number
+    do{
     cout<<"Enter the number: ";
     cin>>number;
+    if (number<1)
+        cout<<"Invalid Input"<<endl;
+    }while(number<1);
     
     //use for loop to calculate the sum
     for(int i=1;i<=number;i++){
@@ -381,6 +405,7 @@ float celsius(int f) {
 
 //mark sort
 void Sort(string array[],int SIZE) {
+    //mark the sort in the array
     for(int i=0;i<SIZE-1;i++) {
         for(int j=i+1;j<SIZE;j++) {
             if(array[i]>array[j]) {
@@ -394,9 +419,10 @@ void Sort(string array[],int SIZE) {
 
 //Binary search
 int Search(string str,const string arr[],int SIZE) {
-    int begin=0;
-    int end=SIZE-1;
-    int mid;
+    int begin=0;         //first array
+    int end=SIZE-1;      //last array
+    int mid;             //the array in midden
+    //use the do while loop to find the name in array
     do {
         mid=(begin+end)/2;
         if(str==arr[mid])
