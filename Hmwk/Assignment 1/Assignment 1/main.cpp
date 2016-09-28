@@ -88,11 +88,15 @@ int main(int argc, char** argv) {
 }
 
 void pg1(){
+    //declare variables
     int number;
     int *array;
+    //ask the user enter the number
     cout << "Enter the number of elements: ";
     cin >> number;
+    //print the number to the array
     array = getarray(number);
+    //Output it
     cout << "The elements in the dynamic array: ";
     for(int i = 0; i < number; i++)
     cout << *(array + i) << " ";
@@ -101,6 +105,7 @@ void pg1(){
 }
 
 void pg2(){
+    //declare variables
     int size;
     int num;
     int pl=5;
@@ -128,7 +133,6 @@ void pg2(){
     //Output the array before sorting
     cout<<"You'd already inputted:"<<endl;
     prtArr(arr,size,pl);
-    
     //sorting and output array
     mrkSrt(arr,size);
     cout<<endl<<"After sorting"<<endl;
@@ -139,9 +143,10 @@ void pg2(){
 }
 
 void pg3(){
+    //declare variables
     int size;
     int num;
-    int pl=5;//per line
+    int pl=5;
     string name;
     //Prompt user for size
     do {
@@ -171,7 +176,6 @@ void pg3(){
     //Output the array before sorting
     cout<<"You'd already inputted:"<<endl;
     prtArr(arr,str,size,pl);
-    
     //sorting and output array
     mrkSrt(arr,str,size);
     cout<<endl<<"After sorting"<<endl;
@@ -184,16 +188,20 @@ void pg3(){
 }
 
 void pg4(){
+    //declare variables
     int x = 10, y = 5;
+    //output the x and y before function
     cout<<"x,y values before function call: "<<x<<" "<<y<<endl;
+    //do something for x and y
     cout<<"Result: "<<doSomething(&x,&y)<<endl;
+    //output the x and y after the function
     cout<<"x,y value after function call: "<<x<<" "<<y<<endl;
 }
 
 void pg5(){
-        //declare variables
-    int size;//size of array
-    const int SIZE=1000;//size for new array
+    //declare variables
+    int size;
+    const int SIZE=1000;
     //prompt user for size of array
     do {
         cout<<"Input the size of array"<<endl;
@@ -210,13 +218,14 @@ void pg5(){
         cout<<"#"<<(i+1)<<": ";
         cin>>*(arr+i);
     }
-    
+    //print it in the array
     for (int i=0;i<size;i++)
         arrPtr[i] = &(*(arr+i));
         seltSrt(arrPtr, size);
-        
+    //Out put the array in ascending order
     cout << "The array, sorted in ascending order are: \n";
     pnArPtr(arrPtr, size);
+    //Output the array in their original
     cout << "The array, in their original order are: \n";
     showAry(arr, size);
     //delete the dynamic array
@@ -225,34 +234,43 @@ void pg5(){
 }
 
 void pg6(){
+    //declare variables
     const int SIZE=15;//size for new array
     int arr[SIZE]={5,100,5,25,10,5,25,5,5,100,10,15,10,5,10};
     int *arrPtr[SIZE];//array for pointer
-    
+    //print it in array
     for (int i=0;i<SIZE;i++)
         arrPtr[i] = &(*(arr+i));
         seltSrt(arrPtr, SIZE);
+    //Out put the array in ascending order
     cout << "The array, sorted in ascending order are: \n";
     pnArPtr(arrPtr, SIZE);
+    //Output the array in their original
     cout << "The array, in their original order are: \n";
     showAry(arr, SIZE);
 }
 
 void pg7(){
+    //declare variables
     int *array=new int[20];
     int i,n;
     double Median;
+    //ask the user enter the size
     cout<<"Enter size of array: ";
     cin>>n;
+    //Output the number and input the number
     for(i=0;i<n;i++){
         cout<<"Enter the number #"<<i+1<<":";
         cin>>*(array+i);
     }
+    //calculate the median
     Median=median_value(array,n);
+    //Output the median
     cout<<"Median is: "<<Median;
 }
 
 void pg8(){
+    //declare variables
     int size;
     //input the size and check
     do {
