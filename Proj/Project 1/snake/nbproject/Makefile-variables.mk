@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Debug=assignment_1
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/assignment_1
+CND_ARTIFACT_NAME_Debug=snake
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/snake
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Debug=assignment1.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/assignment1.tar
+CND_PACKAGE_NAME_Debug=snake.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/snake.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Release=assignment_1
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/assignment_1
+CND_ARTIFACT_NAME_Release=snake
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/snake
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Release=assignment1.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/assignment1.tar
+CND_PACKAGE_NAME_Release=snake.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/snake.tar
 #
 # include compiler specific variables
 #
