@@ -9,16 +9,16 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Debug=ch14pg3
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/ch14pg3
+CND_ARTIFACT_NAME_Debug=ch14_pg3
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/ch14_pg3
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
 CND_PACKAGE_NAME_Debug=ch14pg3.tar
 CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/ch14pg3.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Release=ch14pg3
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/ch14pg3
+CND_ARTIFACT_NAME_Release=ch14_pg3
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/ch14_pg3
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
 CND_PACKAGE_NAME_Release=ch14pg3.tar
 CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/ch14pg3.tar
